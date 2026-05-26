@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Exponenciales | Plataforma Educativa</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Librería para gráficas -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="hero" id="inicio">
+        <nav class="navbar">
+            <h1 class="logo">Funciones Expo</h1>
+
+            <ul class="nav-links">
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#definiciones">Definiciones</a></li>
+                <li><a href="#funciones">Funciones</a></li>
+                <li><a href="#crecimiento">Crecimiento</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#ecuaciones">Ecuaciones</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+
+            <button id="themeToggle">🌙</button>
+        </nav>
+
+        <div class="hero-content glass">
+            <h2>Funciones Exponenciales</h2>
+            <p>
+                Página web educativa sobre funciones exponenciales para aprender de manera sencilla el crecimiento y decrecimiento exponencial mediante ejemplos, gráficas y ejercicios interactivos.
+            </p>
+
+            <div class="project-info">
+                <p><strong>Materia:</strong> Matemáticas</p>
+                <p><strong>Grupo:</strong> ________</p>
+                <p><strong>Integrantes:</strong> ________</p>
+                <p><strong>Fecha:</strong> ________</p>
+            </div>
+
+            <a href="#introduccion" class="btn-primary">Entrar al contenido</a>
+        </div>
+    </header>
+
+
+    <!-- ================= INTRODUCCIÓN ================= -->
+    <section class="section" id="introduccion">
+        <h2>¿Qué son las Funciones Exponenciales?</h2>
+
+        <div class="card-grid">
+            <div class="card glass">
+                <h3>Definición</h3>
+                <p>
+                    Una función exponencial es una función matemática donde la variable aparece en el exponente.
+                    Su forma general es:
+                </p>
+
+                <div class="formula">
+                    f(x)=a·bˣ
+                </div>
+            </div>
+
+            <div class="card glass">
+                <h3>Importancia</h3>
+                <p>
+                    Las funciones exponenciales permiten modelar fenómenos reales como crecimiento poblacional,
+                    inversiones financieras, propagación de virus y desintegración radiactiva.
+                </p>
+            </div>
+
+            <div class="card glass">
+                <h3>Objetivo Educativo</h3>
+                <p>
+                    Comprender cómo cambian las funciones exponenciales mediante simulaciones dinámicas,
+                    gráficas y ejemplos interactivos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= DEFINICIONES ================= -->
+    <section class="section" id="definiciones">
+        <h2>Definiciones Importantes</h2>
+
+        <div class="definitions-container">
+
+            <div class="definition-card glass">
+                <h3>Función Exponencial</h3>
+                <p>Es una función donde la variable se encuentra en el exponente.</p>
+                <div class="formula">f(x)=2ˣ</div>
+            </div>
+
+            <div class="definition-card glass">
+                <h3>Base</h3>
+                <p>Es el número que se eleva a diferentes exponentes.</p>
+                <div class="formula">3ˣ → Base = 3</div>
+            </div>
+
+            <div class="definition-card glass">
+                <h3>Exponente</h3>
+                <p>Indica cuántas veces se multiplica la base.</p>
+                <div class="formula">2³ = 8</div>
+            </div>
+
+            <div class="definition-card glass">
+                <h3>Crecimiento Exponencial</h3>
+                <p>Ocurre cuando la base es mayor que 1.</p>
+                <div class="formula">f(x)=5ˣ</div>
+            </div>
+
+            <div class="definition-card glass">
+                <h3>Decrecimiento Exponencial</h3>
+                <p>Ocurre cuando la base está entre 0 y 1.</p>
+                <div class="formula">f(x)=0.5ˣ</div>
+            </div>
+
+            <div class="definition-card glass">
+                <h3>Asíntota</h3>
+                <p>La función se acerca al eje X pero nunca lo toca.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FUNCIONES EXPONENCIALES ================= -->
+    <section class="section" id="funciones">
+        <h2>Funciones Exponenciales</h2>
+
+        <div class="card-grid">
+
+            <div class="card glass">
+                <h3>Propiedades</h3>
+                <ul>
+                    <li>Dominio: todos los números reales</li>
+                    <li>Rango: números positivos</li>
+                    <li>La gráfica nunca toca el eje X</li>
+                    <li>Puede crecer o decrecer rápidamente</li>
+                </ul>
+            </div>
+
+            <div class="card glass">
+                <h3>Ejemplo Resuelto</h3>
+                <p>Resolver f(x)=2ˣ para x=4</p>
+                <div class="formula">2⁴ = 16</div>
+                <p>Resultado: la función vale 16.</p>
+            </div>
+
+            <div class="card glass">
+                <h3>Interpretación Gráfica</h3>
+                <p>
+                    Las gráficas exponenciales muestran cambios acelerados.
+                    Mientras mayor sea la base, más rápido crece la función.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CRECIMIENTO ================= -->
+    <section class="section" id="crecimiento">
+        <h2>Crecimiento y Decrecimiento Exponencial</h2>
+
+        <div class="applications-grid">
+
+            <div class="application glass">
+                <h3>Crecimiento Poblacional</h3>
+                <p>La población aumenta rápidamente con el tiempo.</p>
+            </div>
+
+            <div class="application glass">
+                <h3>Interés Compuesto</h3>
+                <p>El dinero crece de manera exponencial en inversiones.</p>
+            </div>
+
+            <div class="application glass">
+                <h3>Virus</h3>
+                <p>Las enfermedades pueden propagarse exponencialmente.</p>
+            </div>
+
+            <div class="application glass">
+                <h3>Desintegración Radiactiva</h3>
+                <p>Los materiales radiactivos disminuyen exponencialmente.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= SIMULADOR ================= -->
+    <section class="section" id="simulador">
+        <h2>Simulador Interactivo</h2>
+
+        <div class="simulator-container glass">
+
+            <div class="controls">
+
+                <label>Selecciona una función:</label>
+                <select id="functionSelect">
+                    <option value="2">f(x)=2^x</option>
+                    <option value="3">f(x)=3^x</option>
+                    <option value="5">f(x)=5^x</option>
+                    <option value="10">f(x)=10^x</option>
+                    <option value="0.5">f(x)=0.5^x</option>
+                    <option value="2.718">f(x)=e^x</option>
+                </select>
+
+                <label>Coeficiente:</label>
+                <input type="range" min="1" max="10" value="1" id="coefficientSlider">
+                <span id="coefficientValue">1</span>
+
+                <label>Rango de X:</label>
+                <input type="range" min="5" max="30" value="10" id="rangeSlider">
+                <span id="rangeValue">10</span>
+
+                <button class="btn-primary" onclick="generateExercise()">
+                    Generar ejercicio
+                </button>
+
+                <button class="btn-secondary" onclick="exportResults()">
+                    Exportar resultados
+                </button>
+
+            </div>
+
+            <div class="chart-container">
+                <canvas id="expoChart"></canvas>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= ECUACIONES ================= -->
+    <section class="section" id="ecuaciones">
+        <h2>Ecuaciones Exponenciales</h2>
+
+        <div class="card-grid">
+
+            <div class="card glass">
+                <h3>Resolución Básica</h3>
+                <p>Resolver:</p>
+                <div class="formula">2ˣ = 16</div>
+                <p>
+                    Como 16 = 2⁴, entonces:
+                </p>
+                <div class="formula">x = 4</div>
+            </div>
+
+            <div class="card glass">
+                <h3>Uso de Logaritmos</h3>
+                <p>
+                    Cuando no podemos igualar bases, usamos logaritmos.
+                </p>
+                <div class="formula">3ˣ = 20</div>
+            </div>
+
+            <div class="card glass">
+                <h3>Aplicaciones</h3>
+                <p>
+                    Las ecuaciones exponenciales se utilizan en economía,
+                    biología, química y tecnología.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CALCULADORA ================= -->
+    <section class="section" id="calculadora">
+        <h2>Calculadora Exponencial</h2>
+
+        <div class="calculator glass">
+            <input type="number" id="baseInput" placeholder="Base">
+            <input type="number" id="exponentInput" placeholder="Exponente">
+
+            <button class="btn-primary" onclick="calculatePower()">
+                Calcular
+            </button>
+
+            <h3 id="calcResult"></h3>
+        </div>
+    </section>
+
+
+    <!-- ================= QUIZ ================= -->
+    <section class="section" id="quiz">
+        <h2>Cuestionario Interactivo</h2>
+
+        <div class="quiz-container glass">
+
+            <div class="question">
+                <p>1. ¿Qué ocurre si la base es mayor que 1?</p>
+                <button onclick="checkAnswer(this, true)">La función crece</button>
+                <button onclick="checkAnswer(this, false)">La función decrece</button>
+            </div>
+
+            <div class="question">
+                <p>2. ¿Qué representa 0.5^x?</p>
+                <button onclick="checkAnswer(this, true)">Decrecimiento exponencial</button>
+                <button onclick="checkAnswer(this, false)">Crecimiento lineal</button>
+            </div>
+
+            <h3 id="scoreText">Puntaje: 0</h3>
+
+        </div>
+    </section>
+
+
+    <!-- ================= REFERENCIAS ================= -->
+    <section class="section" id="referencias">
+        <h2>Referencias APA 7</h2>
+
+        <div class="glass references">
+            <ul>
+                <li>Stewart, J. (2016). Cálculo de una variable. Cengage Learning.</li>
+                <li>Larson, R. (2018). Precálculo. McGraw-Hill.</li>
+                <li>OpenStax. (2020). Algebra and Trigonometry.</li>
+                <li>Zill, D. (2017). Matemáticas avanzadas. Pearson.</li>
+                <li>Leithold, L. (2015). El cálculo. Oxford University Press.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>Proyecto educativo sobre Funciones Exponenciales ©️ 2026</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
